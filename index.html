@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Chart JS</title>
+  </head>
+  <body>
+    <header>
+      <span>
+        <h2>My balance</h2>
+        <span class="total">$921.48</span>
+      </span>
+      <div class="circles">
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <main>
+      <h1>Spending - Last 7 days</h1>
+      <canvas id="bar-chart"></canvas>
+      <section class="summary">
+        <span>Total this month</span>
+        <div>
+          <span class="total-big">$478.33</span>
+          <span class="delta">
+            +2.4%
+            <span>from last month</span>
+          </span>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+    integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="script.js" defer type="module"></script>
+</html>

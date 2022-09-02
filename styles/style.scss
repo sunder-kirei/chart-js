@@ -1,0 +1,152 @@
+@import './colors.scss';
+
+:root{
+    font-size: $font;
+    font-family: 'DM Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 85em * 1/3;
+    height: 51em * 3/5;
+    display: flex;
+    flex-direction: column;
+}
+
+canvas{
+    border-bottom: 1px solid $medium-brown;
+    height: 13em;
+    width: stretch;
+    padding: 1rem;
+}
+
+header{
+    max-height: 20%;
+    margin-bottom: 1em;
+    background-color: $soft-red;
+    border-radius: 1em;
+    padding-inline: 2em;
+    padding-block: 1em;
+    color: $pale-orange;
+    display: flex;
+    
+    span{
+        flex: 1;
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 1em;
+        opacity: 0.8;
+    }
+    .total{
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+    .circles{
+        flex: 0;
+        flex-basis: 4em;
+        padding: 0.3em;
+        div:nth-child(1){
+            position: relative;
+            width: 80%;
+            height: 100%;
+            border: 0.2em solid white;
+            border-radius: 50%;
+            z-index: 10
+        };
+        div:nth-child(2){
+            position: relative;
+            width: 80%;
+            height: 100%;
+            top: -100%;
+            left: 20%;
+            background-color: black;
+            border-radius: 50%;
+        }
+    }
+}
+
+html{
+    width: 100vw;
+    min-height: 100vh;
+    height: min-content;
+    background-color: $cream;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    border-radius: 1em;
+    padding-inline: 2em;
+    padding-block: 1em;
+    flex: 1;
+    background-color: $pale-orange;
+    color: $dark-brown;
+}
+
+@media only screen and (max-width: 700px) {
+    :root{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    :root{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    :root{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    :root{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 240px) {
+    :root{
+        font-size: 5px;
+    }
+}
+
+.summary{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    span{
+        color: $medium-brown;
+        font-size: 1em;
+        opacity: 0.8;
+    }
+    div{
+        display: flex;
+        .total-big{
+            flex: 1;
+            color: $dark-brown;
+            opacity: 1;
+            font-weight: 700;
+            font-size: 2.5em;
+        }
+        .delta{
+            display: flex;
+            flex-direction: column;
+            color: $dark-brown;
+            opacity: 1;
+            font-weight: 700;
+            span{
+                opacity: 0.8;
+                color: $medium-brown;
+                font-weight: 400;
+            }
+        }
+    }
+}
