@@ -19,6 +19,8 @@ body {
 canvas {
   border-bottom: 1px solid hsl(28deg, 10%, 53%);
   height: 13em;
+  width: -webkit-fill-available;
+  width: -moz-available;
   width: stretch;
   padding: 1rem;
 }
@@ -71,6 +73,8 @@ header .circles div:nth-child(2) {
 html {
   width: 100vw;
   min-height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   background-color: hsl(27deg, 66%, 92%);
   display: flex;
@@ -144,6 +148,4 @@ main {
   opacity: 0.8;
   color: hsl(28deg, 10%, 53%);
   font-weight: 400;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

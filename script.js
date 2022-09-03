@@ -1,4 +1,3 @@
-// import { Tooltip } from "chart.js"
 import data from "./data.json" assert { type: "json" };
 
 const canvas = document.getElementById("bar-chart");
